@@ -7,7 +7,7 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::path::Path;
 
-pub fn data_reader() -> Result<(), Box<dyn std::error::Error>> {
+pub fn data_reader() -> Result<Vec<Vec<i32>>, Box<dyn std::error::Error>> {
     let file_path = Path::new("/home/vespr/Downloads/data");
     let file = File::open(file_path)?;
     let reader = BufReader::new(file);
@@ -33,5 +33,5 @@ pub fn data_reader() -> Result<(), Box<dyn std::error::Error>> {
     for (i, row) in all_data.iter().enumerate() {
         println!("Line {}: {:?}", i + 1, row);
     }
-    Ok(())
+    Ok(all_data)
 }
