@@ -1,0 +1,8 @@
+/**
+ * Author:  Raye Lattice
+ * Repo:    table-gen
+ * Created: 09/14/2025
+ */
+
+pub mod data;
+pub mod calc;
