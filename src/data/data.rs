@@ -3,6 +3,7 @@
  * Repo:    table-gen
  * Created: 09/14/2025
  */
+
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::path::Path;
